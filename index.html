@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <script type="text/javascript" src="func.js" defer></script>
+    <title>Clima pelo cep</title>
+</head>
+<body>
+    <main>
+        <!-- Principal -->
+        <h2>Clima a partir do cep</h2>
+        <div id="form">
+            <div class="divInput">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" class="input"/>
+                <button id="btnBuscar" onclick=PesquisaCep()>Buscar</button>
+            </div>
+            <!--div para exibi o resultado da pesquisa-->
+            <div class="divInput">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" class="input"/>
+            </div>
+            <div class="divInput">
+                <label for="localidade">Cidade</label>
+                <input type="text" name="localidade" id="localidade" class="input">
+                
+            </div>
+            <div class="divInput">
+                <label for="uf">UF</label>
+                <input type="text" name="uf" id="uf" class="input"/>
+            </div>
+            <div id="divResultado" class="divResultado ">
+                <h2 class="tempCidade">Tempo ***</h2>
+                <h2 class="temperatura">20 °C</h2>
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="Clima" class="icons">
+                <h2 class="tempo">Nublado</h2>
+                <h2 class="umidade">Umidade: 70 %</h2>
+            </div>
+        </div>
+    </main>    
+</body>
+</html>
